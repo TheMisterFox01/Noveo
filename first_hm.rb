@@ -5,4 +5,4 @@ def sum_arr(arr)
   arr.shift + sum_arr(arr)
 end
 
-puts sum_arr([1,2,3,4,5,6,-12,143,3.34,-2.52])  
+puts sum_arr([1,2,3,4,5,6,-1,1666,3.34])  
