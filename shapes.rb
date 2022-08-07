@@ -1,11 +1,6 @@
 #!/usr/bin/ruby
 
-class ShapesInterface
-  def get_square
-  end
-end
-
-class Square < ShapesInterface
+class Square
   attr_reader :length
 
   def initialize(length)
@@ -17,7 +12,7 @@ class Square < ShapesInterface
   end
 end
 
-class Rectangle < ShapesInterface 
+class Rectangle 
   attr_reader :length, :width
 
   def initialize(length, width)
@@ -30,7 +25,7 @@ class Rectangle < ShapesInterface
   end
 end
 
-class Triangle < ShapesInterface
+class Triangle
   attr_reader :base, :height
 
   def initialize(base, height)
@@ -43,7 +38,7 @@ class Triangle < ShapesInterface
   end
 end
 
-class Circle < ShapesInterface
+class Circle
   attr_reader :radius
 
   def initialize(radius)
@@ -55,7 +50,7 @@ class Circle < ShapesInterface
   end
 end
 
-class CustomShape < ShapesInterface
+class CustomShape
   attr_reader :square
 
   def initialize(square)
