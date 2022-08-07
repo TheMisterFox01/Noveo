@@ -2,9 +2,9 @@
 
 module Tryable
   def try(&block)
-	block.call(self)
+     block.call(self)
   rescue NoMethodError
-	nil
+     nil
   end	
 end
 
